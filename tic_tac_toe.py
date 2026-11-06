@@ -11,7 +11,7 @@ def print_board():
     print("---+---+---")
     print(" " + board[6] + " | " + board[7] + " | " + board[8])
 
-def get_empty_boxes():
+def Empty_boxes():
     empty_boxes = []
     for i in range(9):
         if board[i] == " ":
@@ -19,7 +19,7 @@ def get_empty_boxes():
     return empty_boxes
 
 def computer_move(mark):
-    empty_boxes = get_empty_boxes()
+    empty_boxes = Empty_boxes()
     choice = random.choice(empty_boxes)
     board[choice] = mark
     print("Computer put " + mark + " in box " + str(choice + 1))
