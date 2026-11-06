@@ -58,7 +58,7 @@ while True:
     if check_winner(player):
         print("You win!")
         break
-    if len(get_empty_boxes()) == 0:
+    if len(Empty_boxes()) == 0:
         print("It's a draw!")
         break
 
@@ -67,6 +67,6 @@ while True:
     if check_winner(computer):
         print("Computer wins!")
         break
-    if len(get_empty_boxes()) == 0:
+    if len(Empty_boxes()) == 0:
         print("It's a draw!")
         break
